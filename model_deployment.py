@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-df = pickle.load(open(r'C:\Users\xyz\Desktop\clean_dataset.pkl', 'rb'))
+df = pickle.load(open(r'clean_dataset.pkl', 'rb'))
 
 x_train, x_test, y_train, y_test = train_test_split(df.drop('price', axis = 1), df['price'], test_size = 0.1)
 
